@@ -31,7 +31,7 @@ To submit your code, you will:
 
     For example, Sammy Slug would have a `config.json` for P1 that looks like:
 
-    ```json
+```json
     {
         "course": "CSE140",
         "assignment": "p1",
@@ -39,29 +39,29 @@ To submit your code, you will:
         "user": "sslug@ucsc.edu",
         "pass": "1234567890"
     }
-    ```
+```
 
 When you are ready to submit,
     you can do so using the command:
 
-    ```sh
+```sh
     python3 -m autograder.cli.submit pacai/student/search.py pacai/student/searchAgents.py
-    ```
+```
 
-    This will take your `config.json`, `pacai/student/search.py`, and `pacai/student/searchAgents.py` from your current directory
-    and send them to the autograding server.
-    The autograder will get your code and run a bunch of secret tests on it to assign you a grade.
-    It will return output formatted about the same as the local tests.
+This will take your `config.json`, `pacai/student/search.py`, and `pacai/student/searchAgents.py` from your current directory
+and send them to the autograding server.
+The autograder will get your code and run a bunch of secret tests on it to assign you a grade.
+It will return output formatted about the same as the local tests.
 
-    The autograder records all your submissions (the code, time, and score).
-    The score you received on your most recent submission is your current grade for the assignment
-    (not counting late assignments and manually graded components).
+The autograder records all your submissions (the code, time, and score).
+The score you received on your most recent submission is your current grade for the assignment
+(not counting late assignments and manually graded components).
 
-    You can make as many attempts as you want.
-    However if we find you abusing the autograder (e.g. repeatedly failing tests that would have been caught by testing locally),
-    then you can lose points.
-    Any attempt to willingly circumvent the autograder (e.g. "hacking" it)
-    may result in an immediate F in this class and a referral for academic integrity.
+You can make as many attempts as you want.
+However if we find you abusing the autograder (e.g. repeatedly failing tests that would have been caught by testing locally),
+then you can lose points.
+Any attempt to willingly circumvent the autograder (e.g. "hacking" it)
+may result in an immediate F in this class and a referral for academic integrity.
 
 
 #### Evaluation
