@@ -1,2 +1,3 @@
 These are the assignments for CSE140 at UCSC.  They are:
-- [P0](p0/README.md)
+- [p0](p0/README.md)
+- [p1](p1/README.md)
