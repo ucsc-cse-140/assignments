@@ -30,6 +30,7 @@ To submit your code, you will:
                      If you didn't get the password, forgot it, etc; talk to a TA.
 
     For example, Sammy Slug would have a `config.json` for P1 that looks like:
+
     ```json
     {
         "course": "CSE140",
@@ -42,6 +43,7 @@ To submit your code, you will:
 
 When you are ready to submit,
     you can do so using the command:
+
     ```sh
     python3 -m autograder.cli.submit pacai/student/search.py pacai/student/searchAgents.py
     ```
