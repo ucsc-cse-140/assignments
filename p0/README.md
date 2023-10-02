@@ -23,8 +23,9 @@ To submit your code, you will:
      - `pass` -- The password that was emailed to you in the beginning of this course.
                      If you didn't get the password, forgot it, etc; talk to a TA.
 
-    For example, Sammy Slug would have a `config.json` for P0 that looks like:
-    ```json
+For example, Sammy Slug would have a `config.json` for P0 that looks like:
+
+```json
     {
         "course": "CSE140",
         "assignment": "p0",
@@ -36,7 +37,8 @@ To submit your code, you will:
 
 When you are ready to submit,
     you can do so using the command:
-    ```sh
+
+```sh
     python3 -m autograder.cli.submit buyLotsOfFruit.py shopSmart.py
     ```
 
