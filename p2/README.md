@@ -17,24 +17,51 @@ The code for this project consists of several Python files, some of which you wi
 
 #### Submission
 
-You will fill in portions of `pacai.student.multiagents` during this assignment.
+You will fill in portions of `pacai/student/multiagents.py` during this assignment.
                You should **only** submit this file.
 
-This assignment should be submitted with the filename **`solution.zip`** [HERE](/p2/index.html).
-               Please use the command line `zip` tool to make sure your submission gets zipped correctly:
+To submit your code, you will:
+  Open up `config.json` and put your information in there:
+     - `course` -- The current course you are enrolled in (already set).
+     - `assignment` -- The current assignment you are working on (already set).
+     - `server` -- The autograding server to submit assignment to (already set).
+     - `user` -- Your username (email) for the autograder.
+     - `pass` -- The password that was emailed to you in the beginning of this course.
+                     If you didn't get the password, forgot it, etc; talk to a TA.
 
-`
-               zip -j solution.zip pacai/student/multiagents.py
-            `
+    For example, Sammy Slug would have a `config.json` for P1 that looks like:
 
-For these submissions, unzip should directly yield the source files and **not** a directory named "solution", "pN", or "pacai".
-               Note that this is counter to standard conventions when sending a zip file to a human, but easier for the autograder.
+```json
+    {
+        "course": "CSE140",
+        "assignment": "p1",
+        "server": "http://lighthouse.soe.ucsc.edu",
+        "user": "sslug@ucsc.edu",
+        "pass": "1234567890"
+    }
+```
 
-After submitting, the autograder will grade your submission and report the result back to you.
-               Do not close the tab or you will not be able to see your score.
-               You can submit as many times as you want.
-               However, if we find you continually making tiny changes instead of testing locally, then we will deduct points.
-               Any attempt to trick the autograder is considered cheating.
+When you are ready to submit,
+    you can do so using the command:
+
+```sh
+    python3 -m autograder.cli.submit pacai/student/multiagents.py
+```
+
+This will take your `config.json` and `pacai/student/multiagents.py` from your current directory
+and send them to the autograding server.
+The autograder will get your code and run a bunch of secret tests on it to assign you a grade.
+It will return output formatted about the same as the local tests.
+
+The autograder records all your submissions (the code, time, and score).
+The score you received on your most recent submission is your current grade for the assignment
+(not counting late assignments and manually graded components).
+
+You can make as many attempts as you want.
+However if we find you abusing the autograder (e.g. repeatedly failing tests that would have been caught by testing locally),
+then you can lose points.
+Any attempt to willingly circumvent the autograder (e.g. "hacking" it)
+may result in an immediate F in this class and a referral for academic integrity.
 
 #### Evaluation
 
