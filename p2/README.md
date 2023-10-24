@@ -34,7 +34,7 @@ To submit your code, you will:
 ```json
     {
         "course": "CSE140",
-        "assignment": "p1",
+        "assignment": "p2",
         "server": "http://lighthouse.soe.ucsc.edu",
         "user": "sslug@ucsc.edu",
         "pass": "1234567890"
