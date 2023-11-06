@@ -50,7 +50,7 @@ When you are ready to submit,
     pacai/student/qlearningAgents.py pacai/student/analysis.py
 ```
 
-This will take your `config.json` and `pacai/student/multiagents.py` from your current directory
+This will take your `config.json`,  `pacai/student/valueIterationAgents.py`, `pacai/student/qlearningAgents.py`, and  `pacai/student/analysis.py` from your current directory
 and send them to the autograding server.
 The autograder will get your code and run a bunch of secret tests on it to assign you a grade.
 It will return output formatted about the same as the local tests.
