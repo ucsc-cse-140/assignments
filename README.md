@@ -3,6 +3,7 @@ These are the assignments for CSE140 at UCSC.  They are:
 - [p0](p0/README.md)
 - [p1](p1/README.md)
 - [p2](p2/README.md)
+- [p3](p3/README.md)
 
 # CSE 140 Programming Assignment Setup
 There are two repositories that are needed for CSE 140:
