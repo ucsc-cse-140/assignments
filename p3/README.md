@@ -46,11 +46,11 @@ When you are ready to submit,
 
 ```sh
     python3 -m autograder.cli.submit
-    pacai/student/valueIterationAgents.py
+    pacai/student/valueIterationAgent.py
     pacai/student/qlearningAgents.py pacai/student/analysis.py
 ```
 
-This will take your `config.json` and `pacai/student/multiagents.py` from your current directory
+This will take your `config.json`,  `pacai/student/valueIterationAgent.py`, `pacai/student/qlearningAgents.py`, and  `pacai/student/analysis.py` from your current directory
 and send them to the autograding server.
 The autograder will get your code and run a bunch of secret tests on it to assign you a grade.
 It will return output formatted about the same as the local tests.
@@ -536,11 +536,13 @@ Approximate q-learning assumes the existence of a feature function f(s,a) over s
                Feature vectors are dictionary objects containing the non-zero pairs of features and values;
                all omitted features have value zero.
 
-The approximate q-function takes the following form:
+The approximate q-function takes the following form: $$Q(s,a) = \sum_i^n f_i(s,a)w_i$$
 
 where each weight w<sub>i</sub> is associated with a particular feature f<sub>i</sub>(s,a).
                In your code, you should implement the weight vector as a dictionary mapping features (which the feature extractors will return) to weight values.
                You will update your weight vectors similarly to how you updated q-values:
+               $$w_i \leftarrow w_i + \alpha [correction] f_i(s,a)$$
+               $$correction = (R(s,a) + \gamma V'(s)) - Q(s,a)$$
 
 Note that the term is the same as in normal Q-Learning.
 
