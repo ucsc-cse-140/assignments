@@ -29,26 +29,48 @@ We will evaluate your submissions based on a short written report (2-3 pages) on
 To enter into the nightly tournaments, your team's agents and all relevant functions must be defined in [pacai.student.myTeam](https://ucsc-cse-140.github.io/student/myTeam.html).
 
 Every team must have a unique name, consisting only of ASCII letters and digits (any other characters, including whitespace, will be ignored).
-               Fill in your team name and list all team members in [this form](https://forms.gle/SSoWhRj526bkniKw9).
+               Fill in your team name and list all team members in [this form](https://forms.gle/k7pv2Nrh6DqgT9ZM6).
                Please access this document using your UCSC account as this is intended to be shared with only with valid UCSC accounts.
                As shown in the Google doc, you will state your chosen team name, motto, and members.
                In every submission to the autograder (linked below), you must include a file `name.txt` in which you will write only your unique team name.
                **Do not** include other extraneous text in this file.
                Only your team name will be displayed to the rest of the class.
+You will fill in portions of `pacai/student/multiagents.py` during this assignment.
+               You should **only** submit this file.
 
-This assignment should be submitted with the filename **`solution.zip`** [HERE](/p4/index.html).
-               Please use the command line `zip` tool to make sure your submission gets zipped correctly:
+To submit your code, you will:
+  Open up `config.json` and put your information in there:
+     - `course` -- The current course you are enrolled in (already set).
+     - `assignment` -- The current assignment you are working on (already set).
+     - `server` -- The autograding server to submit assignment to (already set).
+     - `user` -- Your username (email) for the autograder.
+     - `pass` -- The password that was emailed to you in the beginning of this course.
+                     If you didn't get the password, forgot it, etc; talk to a TA.
 
-`
-               zip -j solution.zip pacai/student/myTeam.py pacai/student/name.txt
-            `
+For example, Sammy Slug would have a `config.json` for P4 that looks like:
 
-For these submissions, unzip should directly yield the source files and **not** a directory named "solution", "pN", or "pacai".
-               Note that this is counter to standard conventions when sending a zip file to a human, but easier for the autograder.
-               Since there isn't a "correct" solution to this assignment,
-               the autograder will report whether your agent beat the provided [pacai.core.baselineTeam](https://ucsc-cse-140.github.io/core/baselineTeam.html) agent within the contest rules.
+```json
+    {
+        "course": "CSE140",
+        "assignment": "p4",
+        "server": "http://lighthouse.soe.ucsc.edu",
+        "user": "sslug@ucsc.edu",
+        "pass": "1234567890"
+    }
+```
 
-For your **final submission**, include a file named `[your team name].pdf` that contains your write-up.
+When you are ready to submit,
+    you can do so using the command:
+
+```sh
+    python3 -m autograder.cli.submit
+    pacai/student/myTeam.py pacai/student/name.txt
+```
+
+This will take your `config.json`,  `pacai/student/myTeam.py` and  `pacai/student/name.txt` from your current directory
+and send them to the autograding server.
+
+For your **report submission**, upload a file named `[your team name].pdf` that contains your write-up to Canvas.
                Please make sure that this document contains the names of all members of your team clearly stated at the top.
 
 #### Evaluation
