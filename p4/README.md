@@ -51,7 +51,7 @@ For example, Sammy Slug would have a `config.json` for P4 that looks like:
 
 ```json
     {
-        "course": "CSE140",
+        "course": "CSE140-S24",
         "assignment": "p4",
         "server": "http://lighthouse.soe.ucsc.edu",
         "user": "sslug@ucsc.edu",
