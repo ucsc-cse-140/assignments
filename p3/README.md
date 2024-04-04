@@ -45,7 +45,7 @@ When you are ready to submit,
     you can do so using the command:
 
 ```sh
-    python3 -m autograder.cli.submit
+    python3 -m autograder.cli.submission.submit
     pacai/student/valueIterationAgent.py
     pacai/student/qlearningAgents.py pacai/student/analysis.py
 ```

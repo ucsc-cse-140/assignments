@@ -39,7 +39,7 @@ When you are ready to submit,
     you can do so using the command:
 
 ```sh
-    python3 -m autograder.cli.submit buyLotsOfFruit.py shopSmart.py
+    python3 -m autograder.cli.submission.submit buyLotsOfFruit.py shopSmart.py
 ```
 
 This will take your `config.json`, `buyLotsOfFruit.py`, and `shopSmart.py` from your current directory and send them to the autograding server.    The autograderwill get your code and run a bunch of secret tests on it to assign you a grade.
