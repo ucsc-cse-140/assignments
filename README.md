@@ -21,7 +21,7 @@ other for development and testing.
 For each code base, you will:
 
 1.  Checkout or download the zip file from github.
-2.  Download the requirements with: `pip3 install --user -r requirements.txt`
+2.  Install the requirements with: `pip3 install --user -r requirements.txt`.  The `requirements.txt` file has the three libraries that are required, including the autograder package. 
     1.  For the assignments repo, you will need python version >= 3.10
     2.  For the pacman repository, you will need Tk, check the detailed
         instructions [here](https://github.com/ucsc-cse-140/assignments/tree/main/p1#running-code-on-your-local-machine).
