@@ -60,10 +60,10 @@ need to update the:
 The autograder command line interface (cli) is [documented](https://github.com/eriq-augustine/autograder-py).  As a
 student in the class, the main commands you will use are:
 
--   `python3 -m autograder.cli.submit`: this will submit an assignment
+-   `python3 -m autograder.cli.submission.submit`: this will submit an assignment
     for a particular class and assignment.
--   `python3 -m autograder.cli.peek`: this will show you your last submission
--   `python3 -m autograder.cli.history`: this will show a summary of all
+-   `python3 -m autograder.cli.submission.peek`: this will show you your last submission
+-   `python3 -m autograder.cli.submission.history`: this will show a summary of all
     your past submission
--   `python3 -m autograder.cli.style`: this will check the style of a
+-   `python3 -m autograder.cli.submission.style`: this will check the style of a
     particular assignment.
