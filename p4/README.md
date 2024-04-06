@@ -63,7 +63,7 @@ When you are ready to submit,
     you can do so using the command:
 
 ```sh
-    python3 -m autograder.cli.submit
+    python3 -m autograder.cli.submission.submit
     pacai/student/myTeam.py pacai/student/name.txt
 ```
 

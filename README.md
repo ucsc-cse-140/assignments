@@ -65,5 +65,5 @@ student in the class, the main commands you will use are:
 -   `python3 -m autograder.cli.submission.peek`: this will show you your last submission
 -   `python3 -m autograder.cli.submission.history`: this will show a summary of all
     your past submission
--   `python3 -m autograder.cli.submission.style`: this will check the style of a
+-   `python3 -m autograder.cli.util.style`: this will check the style of a
     particular assignment.

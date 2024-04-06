@@ -45,7 +45,7 @@ When you are ready to submit,
     you can do so using the command:
 
 ```sh
-    python3 -m autograder.cli.submit pacai/student/search.py pacai/student/searchAgents.py
+    python3 -m autograder.cli.submission.submit pacai/student/search.py pacai/student/searchAgents.py
 ```
 
 This will take your `config.json`, `pacai/student/search.py`, and `pacai/student/searchAgents.py` from your current directory
