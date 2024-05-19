@@ -1,12 +1,9 @@
 ## Project 3: Reinforcement Learning
 
-<p align="center">
-<img alt="Pacman with Ghosts" src="https://camo.githubusercontent.com/c34a66b0917936df62f0ceb233dd182ce4c82143b106ab0edeeb452cb610f6f1/687474703a2f2f736f7a6f706f6c2e736f652e756373632e6564752f70332f696e737472756374696f6e732f7061636d616e2d6c6561726e696e672e676966" width="400px">
-</br>
-Pac-Man seeks reward.<br/>
+![](img/pacman-learning.gif)
+<p style="text-align: center;">Pac-Man seeks reward.<br/>
 Should he eat or should he run?<br/>
-When in doubt, q-learn.
-</p>
+When in doubt, q-learn.</p>
 
 ### Introduction
 
@@ -308,6 +305,7 @@ On the default BookGrid, running value iteration for 5 iterations should give yo
 `
                python3 -m pacai.bin.gridworld --agent value --iterations 5
             `
+![img/value.png](img/value.png)
 
 Your value iteration agent will be graded on a new grid.
                We will check your values, q-values, and policies after fixed numbers of iterations and at convergence (e.g. after 100 iterations).
@@ -337,7 +335,9 @@ Consider the `DiscountGrid` layout, shown below.
                These paths are represented by the red arrow in the figure below.
                (2) paths that "avoid the cliff" and travel along the top edge of the grid.
                These paths are longer but are less likely to incur huge negative payoffs.
-               These paths are represented by the green arrow in the figure below.
+               These paths are represented by the green arrow in the figure below:
+               
+![](img/discountgrid.png)
 
 Give an assignment of parameter values for discount, noise, and living-reward which produce the following optimal policy types or state that the policy is impossible by returning the constant `NOT_POSSIBLE`.
                The default corresponds to:
