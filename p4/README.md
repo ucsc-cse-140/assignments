@@ -22,17 +22,17 @@ The project will consist of three phases:
 All of the deadlines for these events will exist on **Canvas**.
                Make sure you check early, **do not** miss a deadline!
 
-We will evaluate your submissions based on a short written report (2-3 pages) on your modeling of the problem and agent design, as well as your performance against your classmates in tournament play.
+We will evaluate your submissions based on a short written report (2-3 pages) on your modeling of the problem and agent design, as well as your performance against the baseline agents and your classmates in tournament play.
 
 #### Submission
 
 To enter into the nightly tournaments, your team's agents and all relevant functions must be defined in [pacai.student.myTeam](https://ucsc-cse-140.github.io/student/myTeam.html).
 
 Every team must have a unique name, consisting only of ASCII letters and digits (any other characters, including whitespace, will be ignored).
-               Fill in your team name and list all team members in [this form](https://forms.gle/k7pv2Nrh6DqgT9ZM6).
-               Please access this document using your UCSC account as this is intended to be shared with only with valid UCSC accounts.
-               As shown in the Google doc, you will state your chosen team name, motto, and members.
-               In every submission to the autograder (linked below), you must include a file `name.txt` in which you will write only your unique team name.
+
+Instructions for forming groups (using Canvas groups) are posted on Canvas. You must submit your team info (team name, motto and list of members).
+
+In every submission to the autograder (linked below), you must include a file `name.txt` in which you will write only your unique team name.
                **Do not** include other extraneous text in this file.
                Only your team name will be displayed to the rest of the class.
 You will fill in portions of `pacai/student/multiagents.py` during this assignment.
@@ -77,7 +77,7 @@ For your **report submission**, upload a file named `[your team name].pdf` that 
 
 The contest will count as your final project, worth 40 points.
                20 of these points will be the result of a written report you submit with your agent describing your approach.
-               The remaining 20 points will be awarded based on your performance in the final contest.
+               The remaining 20 points will be awarded based on your agent's performance.
 
 The written report should be 2-3 pages **(no more)**.
                Through this report we expect you to demonstrate your ability to constructively solve AI problems by identifying:
@@ -91,25 +91,7 @@ The written report should be 2-3 pages **(no more)**.
 * Evaluation of your agent.
 * Lessons learned during the project.
 
-A portion of your grade will be based on performance against the following staff agents:
-
-* staff_baseline
-* staff_SlugTrap
-* staff_SomeSlug
-* staff_SlugBrain<br>
-
-* If you lose to the dummy agent, zero points will be awarded for this section.
-* 10 points for beating the staff_baseline agent.
-* +5 points for beating one additional staff agent. (15 points for beating the staff_baseline agent and one of the additional staff agents).
-* +5 points for beating 2 staff agents (in addition to staff_baseline), OR.
-  - +1 points for being in the top 50%.
-  - +2 points for being in the top 40%.
-  - +3 points for being in the top 30%.
-  - +4 points for being in the top 20%.
-  - +5 points for being in the top 10%.
-* +1 Extra Credit point for being the number one team.
-
-How we compute the percentiles based on the ranking of the teams is described below in [Contest Details](#contest-details).
+UPDATED POLICY: Your grade will be based on performance against the baseline staff agent (staff_baseline). You can earn extra credit by beating other agents in a tournament
 
 #### Academic Dishonesty
 
@@ -393,9 +375,7 @@ If one of your agents produces any stdout/stderr output during its games in the 
 **Teams:**
 We highly encourage you to work in teams of three people (no more than three).
 
-**Prizes:**
-The performance-based portion of your grade will be based on the placement received in **the final** round-robin tournament.
-               Placement is determined by the number of wins (if multiple teams have the same number of wins, it will be broken by the number of ties).
-
 **Extra Credit:**
-Winners in the mid-project checkpoint contest will receive points as follows: 3 points for 1st place, 2 points for 2nd place, and 1 point for third place.
+
+The extra-credit you earn will be based on the placement received in **the final** round-robin tournament.
+Placement is determined by the number of wins (if multiple teams have the same number of wins, it will be broken by the number of ties).
