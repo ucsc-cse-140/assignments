@@ -1,69 +1,62 @@
-# Setup
-1.  Checkout or download the zip file from github.
-2.  Install the requirements with: `pip3 install --user -r requirements.txt`.  The `requirements.txt` file has the three libraries that are required, including the autograder package. 
-    1.  For the assignments repo, you will need python version >= 3.10
-    2.  For the pacman repository, you will need Tk, check the detailed
-        instructions [here](https://github.com/ucsc-cse-140/assignments/tree/main/p1#running-code-on-your-local-machine).
+# CSE 140: Artificial Intelligence
 
-# Assignments
-These are the assignments for CSE140 at UCSC.  They are:
-- [p0](p0/README.md)
-- [p1](p1/README.md)
-- [p2](p2/README.md)
-- [p3](p3/README.md)
-- [p4](p4/README.md)
+Hello students!
 
-# CSE 140 Programming Assignment Setup
-There are two repositories that are needed for CSE 140:
+This is the assignments repository for CSE 140: Artificial Intelligence.
+This repo contains all the materials, resources, and links you will need to complete your assignments for this course.
 
-1.  [Assignments repo](https://github.com/ucsc-cse-140/assignments)
-    -   This is used for turning in assignments and submitting to the autograder.
-2.  [Pacman assignments](https://github.com/linqs/pacman)
-    -   The coding structure for running the pacman and completing the
-        assignments.
+## Setup
 
-I recommend keeping these repos separate.  One for submission, and the
-other for development and testing.
+This course will be taught using Python (version >= 3.8).
+If you are not familiar with Python,
+you are not in trouble.
+Although the purpose of this course is not to teach Python,
+our assignments are not overly complex and there is enough slack for you to learn Python as you take this course.
+(You will have to work a bit harder to do so.)
+You can start learning with some of the [materials listed here](p0/README.md#python)
 
-For each code base, you will:
+In addition to this repository,
+you will be using our UCSC Pac-Man repository:
+[github.com/linqs/pacman](https://github.com/linqs/pacman).
+This contains all the core code we need for our Pac-Man-related AI agents,
+as well as some stubs for you to use in your assignments.
+You will want to make a **PRIVATE** copy of this repository in your GitHub account.
+It must be **PRIVATE**
+(if someone copies your code because your repo is public,
+you are complicit in cheating).
 
-1.  Checkout or download the zip file from github.
-2.  Install the requirements with: `pip3 install --user -r requirements.txt`.  The `requirements.txt` file has the three libraries that are required, including the autograder package. 
-    1.  For the assignments repo, you will need python version >= 3.10
-    2.  For the pacman repository, you will need Tk, check the detailed
-        instructions [here](https://github.com/ucsc-cse-140/assignments/tree/main/p1#running-code-on-your-local-machine).
+Most of the setup materials for this course are listed in the
+[first assignment's instructions](p0/README.md).
+The key setup steps are:
+1. Ensure Python (>= 3.8) is installed.
+2. Setup your Python [virtual environment](p0/README.md#virtual-environments).
+3. Install the requirements listed in this repository's [requirements.txt](requirements.txt) file.
+4. Install [Tk](p0/README.md#tk).
+5. Create a **private** copy of the [Pac-Man repo](https://github.com/linqs/pacman).
+6. Clone your **private** Pac-Man repo.
 
+## Assignments
 
-## Submitting and using the Autograder in CSE 140
+These are five assignments for this course:
+- [P0](p0/README.md)
+- [P1](p1/README.md)
+- [P2](p2/README.md)
+- [P3](p3/README.md)
+- [P4](p4/README.md)
 
-Make sure that the autograder is installed (see [setup](#setup))  on your local machine by
-typing: `python3 -m autograder.cli`.  If you see the `--help` option:
+P0 is a very simple assignment meant to give you a chance to get your development environment setup.
+P4 is a super fun tournament!
 
-```nil
-python -m autograder.cli
-The autograder CLI package contains several tools for interacting with the autograder.
-The following is a non-exhaustive list of CLI tools.
-Invoke each command with the `--help` option for more details.
-```
+## Autograder
 
-Then your autograder is downloaded correctly.  You will also need to
-update the `config.json` file.  See examples in [p0](https://github.com/ucsc-cse-140/assignments/blob/main/p0/config.json) and [p1](https://github.com/ucsc-cse-140/assignments/blob/main/p1/config.json).  You will
-need to update the:
+We will be using an autograder to submit and grade your programming assignments in this course.
+This allows you to get quick feedback on your assignments.
+The autograder is [free and open source](https://github.com/edulinq/autograder-server),
+so if you don't like it, you can make it better!
+All instructions in our course documentation will be assuming that you are interacting with the autograder
+via its [Python interface](https://github.com/edulinq/autograder-py),
+which is listed as a dependency in this repository's [requirements.txt](requirements.txt) file.
 
--   `user` to your ucsc.edu email address
--   `pass` to the password sent from ucsc.autograder to your ucsc email
-    account.  Email the teaching team if it has not been received.
-
-
-### Using the autograder
-
-The autograder command line interface (cli) is [documented](https://github.com/eriq-augustine/autograder-py).  As a
-student in the class, the main commands you will use are:
-
--   `python3 -m autograder.cli.submission.submit`: this will submit an assignment
-    for a particular class and assignment.
--   `python3 -m autograder.cli.submission.peek`: this will show you your last submission
--   `python3 -m autograder.cli.submission.history`: this will show a summary of all
-    your past submission
--   `python3 -m autograder.cli.util.style`: this will check the style of a
-    particular assignment.
+Basic instructions on using the autograder are covered in the
+[first assignment's instructions](p0/README.md#submission),
+but there are many features that you can explore that we do not discuss.
