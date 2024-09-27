@@ -52,7 +52,7 @@ For instructions on submission,
 refer back to the [P0 README](../p0/README.md).
 for example, you may submit with the command:
 ```sh
-python3 -m autograder.cli.submission.submit pacai/student/myTeam.py pacai/student/name.txt
+python3 -m autograder.run.submit pacai/student/myTeam.py pacai/student/name.txt
 ```
 
 For your **report submission**, upload a file named `[your team name].pdf` that contains your write-up to Canvas.

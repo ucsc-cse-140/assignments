@@ -244,7 +244,7 @@ and you are in the assignment directory.
 (You can technically submit from any directory, but you will have to edit the commands we give you.)
 Then, you can you can do so using the command:
 ```sh
-python3 -m autograder.cli.submission.submit buyLotsOfFruit.py shopSmart.py
+python3 -m autograder.run.submit buyLotsOfFruit.py shopSmart.py
 ```
 
 This will take your `config.json`, `buyLotsOfFruit.py`, and `shopSmart.py` from your current directory,
@@ -407,29 +407,36 @@ It can take up-to six hours for an autograder score to be reflected in Canvas.
 
 ### Interacting with the Autograder
 
-All interaction with the autograder is done using the `autograder.cli` tools included in
-this repository's [requirements.txt](../requirements.txt) file.
+All interaction with the autograder is done using the autograder tools included in `autograder-py`
+dependency listed in this repository's [requirements.txt](../requirements.txt) file.
 See [the documentation](https://github.com/edulinq/autograder-py) for a full list of all the autograder tools.
 
 You can list out all the available tools using:
 ```sh
-python3 -m autograder.cli
+python3 -m autograder.run
 ```
 
 You can also get specific help for each tool using `--help`:
 ```sh
-python3 -m autograder.cli.submission.submit --help
+python3 -m autograder.run.submit --help
 ```
 
 The tool has options to configure how it runs (as seen in the help prompt),
 but as long as you run the tool in your assignment directory (the one that this file lives in)
 then all the default options should work just fine.
 
+For this course, you will only need to use commands in the `autograder.run` package of shortcuts.
+But, if you want to see ALL the commands available to you,
+you can look into the `autograder.cli` package:
+```sh
+python3 -m autograder.cli -r
+```
+
 #### Submitting
 
 To submit your code, you can use the `submit` command:
 ```sh
-python3 -m autograder.cli.submission.submit buyLotsOfFruit.py shopSmart.py
+python3 -m autograder.run.submit buyLotsOfFruit.py shopSmart.py
 ```
 
 If the grading was successful, then you will see output that is very similar to the local grader.
@@ -463,7 +470,7 @@ The Pac-Man repo will contain utilities for checking style.
 
 You can ask the autograder to show you your last submission using the `peek` command:
 ```sh
-python3 -m autograder.cli.submission.peek
+python3 -m autograder.run.peek
 ```
 
 If the lookup was successful, then you will see output that is very similar to when you submitted your code originally.
@@ -484,7 +491,7 @@ Total: 2 / 2
 
 To check all your previous scores for this assignment, you can use the `history` command:
 ```sh
-python3 -m autograder.cli.submission.history
+python3 -m autograder.run.history
 ```
 
 This command will return a summary of your past submissions, like:

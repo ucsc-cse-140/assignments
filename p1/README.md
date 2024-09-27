@@ -29,7 +29,7 @@ For instructions on submission,
 refer back to the [P0 README](../p0/README.md).
 for example, you may submit with the command:
 ```sh
-python3 -m autograder.cli.submission.submit pacai/student/search.py pacai/student/searchagents.py
+python3 -m autograder.run.submit pacai/student/search.py pacai/student/searchagents.py
 ```
 
 ### Evaluation
