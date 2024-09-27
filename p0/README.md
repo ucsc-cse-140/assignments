@@ -286,7 +286,7 @@ One more piece of advice: if you don't know what a variable does or what kind of
 For this part of the assignment,
 you will be filling in two methods in two different Python files.
 
-### Problem 1: Buy Lost Of Fruit
+### Problem 1: Buy Lots Of Fruit
 
 Implement the `buyLotsOfFruit` function in the [buyLotsOfFruit.py](buyLotsOfFruit.py) file.
 This function will take a list of `(fruit, weight)` tuples and returns the cost of your list.
