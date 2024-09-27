@@ -229,7 +229,7 @@ If you open it up, you will see the following information:
 For example, Sammy Slug would have a `config.json` for P0 that looks like:
 ```json
     {
-        "course": "CSE140-SXX",
+        "course": "CSE140-QXX",
         "assignment": "p0",
         "server": "http://lighthouse.soe.ucsc.edu",
         "user": "sslug@ucsc.edu",
@@ -286,7 +286,7 @@ One more piece of advice: if you don't know what a variable does or what kind of
 For this part of the assignment,
 you will be filling in two methods in two different Python files.
 
-### Problem 1: Buy Lost Of Fruit
+### Problem 1: Buy Lots Of Fruit
 
 Implement the `buyLotsOfFruit` function in the [buyLotsOfFruit.py](buyLotsOfFruit.py) file.
 This function will take a list of `(fruit, weight)` tuples and returns the cost of your list.

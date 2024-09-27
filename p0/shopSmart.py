@@ -34,7 +34,7 @@ def main():
         'oranges': 5.0
     }
 
-    shop1 =  shop.FruitShop('shop1', dir1)
+    shop1 = shop.FruitShop('shop1', dir1)
     shop2 = shop.FruitShop('shop2', dir2)
 
     shops = [shop1, shop2]
