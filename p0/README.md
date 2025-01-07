@@ -439,6 +439,14 @@ To submit your code, you can use the `submit` command:
 python3 -m autograder.run.submit buyLotsOfFruit.py shopSmart.py
 ```
 
+To submit your code late, use the following command:
+
+```sh
+python3 -m autograder.run.submit --allow-late buyLotsOfFruit.py shopSmart.py
+```
+
+For more information and examples, refer to [autograder-py documentation](https://github.com/edulinq/autograder-py?tab=readme-ov-file#submitting-an-assignment-late)
+
 If the grading was successful, then you will see output that is very similar to the local grader.
 For example, you may see output like:
 ```

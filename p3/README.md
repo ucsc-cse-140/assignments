@@ -319,7 +319,7 @@ Now try the same experiment with an epsilon of 0.
 Is there an epsilon and a learning rate for which it is highly likely (greater than 99%) that the optimal policy will be learned after 50 iterations?
 Code [analysis.question6](https://linqs.github.io/pacman/docs/latest/pacai/student/analysis.html#pacai.student.analysis.question3a)
 to return EITHER a 2-item tuple of `(epsilon, learning rate)` OR the constant `NOT_POSSIBLE` if there is none.
-Epsilon is controlled by `--episode`, learning rate by `--learning-rate`.
+Epsilon is controlled by `--epsilon`, learning rate by `--learning-rate`.
 
 ### Question 7 (1 point)
 

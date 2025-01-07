@@ -45,7 +45,7 @@ In every submission to the autograder (linked below),
 you must include a file `name.txt` in which you will write only your unique team name.
 **Do not** include other extraneous text in this file.
 Only your team name will be displayed to the rest of the class.
-You will fill in portions of `pacai/student/multiagents.py` during this assignment.
+You will fill in portions of `pacai/student/myTeam.py` during this assignment.
 You should **only** submit these two files.
 
 For instructions on submission,
@@ -68,7 +68,6 @@ The written report should be 2-3 pages **(no more)**.
 Through this report we expect you to demonstrate your ability to constructively solve AI problems by identifying:
 - The fundamental problems you are trying to solve.
 - How you modeled these problems.
-- Your representations of the problems.
 - The computational strategy used to solve each problem.
 - Algorithmic choices you made in your implementation.
 - Any obstacles you encountered while solving the problem.
