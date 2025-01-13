@@ -290,23 +290,5 @@ We reserve the right to reward bonus points for clever solutions and show demons
   Then combine those features by multiplying them by different values and adding the results together.
   You might decide what to multiply each feature by based on how important you think it is.
 
-### Mini Contest (3 points extra credit)
-
-Pac-Man's been doing well so far, but things are about to get a bit more challenging.
-This time, we'll pit Pac-Man against smarter foes in a trickier maze.
-In particular, the ghosts will actively chase Pac-Man instead of wandering around randomly and the maze features more twists and dead-ends!
-Extra pellets are given to give Pac-Man a fighting chance.
-You're free to have Pac-Man use any search procedure, search depth, and evaluation function you like.
-The only limit is that games can last a maximum of 3 minutes (with graphics off), so be sure to use your computation wisely.
-
-We'll run the contest with the following command:
-```sh
-python3 -m pacai.bin.pacman --layout contestClassic --pacman ContestAgent --ghosts DirectionalGhost --null-graphics --num-games 10
-```
-
-The three students with the highest score will receive 3, 2, and 1 extra credit points respectively and can look on with pride as their Pac-Man agents are shown off in class.
-Details: we run 10 games, games longer than 3 minutes get score 0, lowest and highest 2 scores discarded, the rest averaged.
-Be sure to document what your agent is doing, as we may award additional extra credit to creative solutions even if they're not in the top 3.
-
 _Project 2 is done.
 Go Pac-Man!_
