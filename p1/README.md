@@ -462,17 +462,3 @@ won't always find the shortest possible path through the maze.
 If you don't understand why, ask the TAs!
 In fact, you can do better if you try.
 
-### Mini Contest (2 points extra credit)
-
-Implement an [pacai.student.searchAgents.ApproximateSearchAgent](https://linqs.github.io/pacman/docs/latest/pacai/student/searchAgents.html#pacai.student.searchAgents.ApproximateSearchAgent)
-that finds a short path through `bigSearch`.
-The three people that find the shortest path using no more than 30 seconds of computation will receive extra credit points.
-
-```sh
-python3 -m pacai.bin.pacman --layout bigSearch --pacman ApproximateSearchAgent --null-graphics
-```
-
-We will time your agent using the no graphics option `--null-graphics`, and it must complete in under 30 seconds on our grading machines.
-Please describe what your agent is doing in a comment!
-We reserve the right to give additional extra credit to creative solutions, even if they don't work that well.
-Don't hard-code the path, of course.
