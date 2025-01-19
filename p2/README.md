@@ -289,6 +289,3 @@ We reserve the right to reward bonus points for clever solutions and show demons
   That is, compute values for features about the state that you think are important.
   Then combine those features by multiplying them by different values and adding the results together.
   You might decide what to multiply each feature by based on how important you think it is.
-
-_Project 2 is done.
-Go Pac-Man!_
