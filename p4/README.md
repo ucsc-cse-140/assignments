@@ -16,19 +16,18 @@ Your team will try to eat the food on the far side of the map, while defending t
 
 The project will consist of three phases:
 
-1. The first phase will consist of finding a team (of no more than three people) and an initial test of the tournament.
+1. The first phase will consist of forming a team (3 to 4 people) and an initial test of the tournament.
    Students must have a team and at **minimum** must submit a
    [DummyAgent](https://linqs.github.io/pacman/docs/latest/pacai/agents/capture/dummy.html#pacai.agents.capture.dummy.DummyAgent) for this phase.
 2. The second phase will consist of daily round-robin style tournaments.
-   During this phase students should improve their agent, while looking for weaknesses in their opponents' submissions.
-3. The final phase will be a final round-robin style tournament, in which students show their best.
+   During this phase students should improve their agents, while looking for weaknesses in their opponents' submissions. Only teams with agents that are getting full points from the autograder will participate in the tournament.
+3. The final phase will be a round-robin style tournament, in which students show their best. Your agent's performance in this last tournament will determine your grade.
    This is students' final chance to shine, winner takes all!
 
 All of the deadlines for these events will exist on **Canvas**.
 Make sure you check early, **do not** miss a deadline!
 
-We will evaluate your submissions based on a short written report (2-3 pages) on your modeling of the problem and agent design,
-as well as your performance against the baseline agents and your classmates in tournament play.
+We will evaluate your submissions based on a short written report (2-3 pages) on your modeling of the problem and agent design, as well as your performance against the baseline agent, the staff agents, and your classmates in tournament play.
 
 ### Submission
 
@@ -38,7 +37,7 @@ To enter into the nightly tournaments, your team's agents and all relevant funct
 Every team must have a unique name,
 consisting only of ASCII letters and digits (any other characters, including whitespace, will be ignored).
 
-Instructions for forming groups (using Canvas groups) are posted on Canvas.
+Instructions for forming groups (using Google Forms) will be posted on Canvas in the lead-up to the assignment.
 You must submit your team info (team name, motto and list of members).
 
 In every submission to the autograder (linked below),
@@ -55,6 +54,8 @@ for example, you may submit with the command:
 python3 -m autograder.run.submit pacai/student/myTeam.py pacai/student/name.txt
 ```
 
+The most recent submission of any team member before the tournament begins will become the whole team's agent and will represent your team in the tournament.
+
 For your **report submission**, upload a file named `[your team name].pdf` that contains your write-up to Canvas.
 Please make sure that this document contains the names of all members of your team clearly stated at the top.
 
@@ -62,7 +63,7 @@ Please make sure that this document contains the names of all members of your te
 
 The contest will count as your final project, worth 40 points.
 20 of these points will be the result of a written report you submit with your agent describing your approach.
-The remaining 20 points will be awarded based on your agent's performance.
+The remaining 20 points will be awarded based on your agent's performance in the final tournament.
 
 The written report should be 2-3 pages **(no more)**.
 Through this report we expect you to demonstrate your ability to constructively solve AI problems by identifying:
@@ -75,16 +76,21 @@ Through this report we expect you to demonstrate your ability to constructively 
 - Lessons learned during the project.
 
 A portion of your grade will be based on performance against the following staff agents:
-- staff_baseline
-- staff_SlugTrap
-- staff_SomeSlug
-- staff_SlugBrain
+- _baseline
+- _baseline_2
+- _staff_SlugTrap
+- _staff_SomeSlug
+- _staff_SlugBrain
+- _teamTA_w17
+- _staff_ta_22
+- _staff_trappingAgent
+
 
 Points are also awarded as follows:
 - If you lose to the dummy agent, zero points will be awarded for this section.
-- 10 points for beating the staff_baseline agent.
-- +5 points for beating one additional staff agent. (15 points for beating the staff_baseline agent and one of the additional staff agents).
-- +5 points for beating 2 staff agents (in addition to staff_baseline), OR.
+- 10 points for beating the _baseline agent.
+- +5 points for beating one additional staff agent.
+- +5 points for beating 2 staff agents (in addition to _baseline), OR.
   - +1 points for being in the top 50%.
   - +2 points for being in the top 40%.
   - +3 points for being in the top 30%.
@@ -92,7 +98,7 @@ Points are also awarded as follows:
   - +5 points for being in the top 10%.
 - +1 Extra Credit point for being the number one team.
 
-How we compute the percentiles based on the ranking of the teams is described below in [Contest Details](#contest-details).
+<!-- How we compute the percentiles based on the ranking of the teams is described below in [Contest Details](#contest-details). -->
 
 ### Academic Dishonesty
 
@@ -102,14 +108,15 @@ These cheat detectors are quite hard to fool, so please don't try.
 We trust you all to submit your own work only; _please_ don't let us down.
 If you do, we will pursue the strongest consequences available to us.
 
+In the case of malicious submissions we will pursue the strongest consequences available to us.
+
 ### Getting Help
 
 You are not alone!
 If you find yourself stuck on something, contact the course staff for help.
-Office hours, section, and Piazza are there for your support; please use them.
+Office hours, section, and discussion boards are there for your support; please use them.
 If you can't make our office hours, let us know and we will schedule more.
 We want these projects to be rewarding and instructional, not frustrating and demoralizing.
-But, we don't know when or how to help unless you ask.
 One more piece of advice: if you don't know what a variable does or what kind of values it takes, print it out.
 
 ## Pacman Capture the Flag
@@ -121,7 +128,7 @@ Red agents (which all have even indices) must defend the red food while trying t
 When on the red side, a red agent is a ghost.
 When crossing into enemy territory, the agent becomes a Pacman.
 
-By default, all games are run on the `defaultcapture` layout.
+By default, games are run on the `defaultcapture` layout.
 To test your agent on other layouts, use the `--layout` option.
 In particular, you can generate random layouts by specifying `RANDOM[seed]`.
 For example, `--layout RANDOM140` will use a map randomly generated with seed 140.
@@ -155,7 +162,7 @@ If the score is zero (i.e., tied) this is recorded as a tie game.
 
 We will run your submissions on a VM server.
 Each move which does not return within one second will incur a warning.
-After three warnings, or any single move taking more than 3 seconds, the game is forfeit.
+After three warnings, or any single move taking more than three seconds, the agent responsible automatically forfeits.
 There will be an initial start-up allowance of 15 seconds
 (use the [pacai.agents.capture.capture.CaptureAgent.registerInitialState](https://linqs.github.io/pacman/docs/latest/pacai/agents/capture/capture.html#pacai.agents.capture.capture.CaptureAgent.registerInitialState) function).
 If you agent times out or otherwise throws an exception,
@@ -198,12 +205,12 @@ with the final tournament deciding the final contest outcomes.
 See the submission instructions for details of how to enter a team into the tournaments.
 Tournaments are run every night (refer to Canvas for nightly cut off) and include all teams that have been submitted
 (either earlier in the day or on a previous day) as of the start of the tournament.
-Currently, each team plays every other team 15 times in one match.
+Currently, each team plays every other team 11 times in one match.
 
 The layouts used in the tournament will be drawn from both the default layout (5 games),
-as well as randomly generated layouts (10 games).
+as well as randomly generated layouts (6 games).
 All layouts are symmetric, and the team that moves first is randomly chosen.
-The results for a nightly tournaments can be found [here (TBA)](#), where you can view overall rankings and scores for each match.
+The results for a nightly tournaments can be found [here](http://seacliff.soe.ucsc.edu/cse140-w25/tournaments/), where you can view overall rankings and scores for each match.
 You can also download replays, the layouts used, and the stdout / stderr logs for each agent.
 
 ## Designing Agents
@@ -263,6 +270,8 @@ Some of these useful methods are:
 
 ### Restrictions
 
+The use of qualified imports is not allowed. If you submit a file with qualified imports, the autograder will heavily penalize your score.
+
 You are free to design any agent you want.
 However, you will need to respect the provided APIs if you want to participate in the tournaments.
 Agents which compute during the opponent's turn will be disqualified.
@@ -276,11 +285,11 @@ that output will be included in the contest results posted on the website.
 Additionally, in some cases a stack trace may be shown among this output in the event that one of your agents throws an exception.
 You should design your code in such a way that this does not expose any information that you wish to keep confidential.
 
-## Contest Details
+<!-- ## Contest Details
 
 ### Teams
 
-We highly encourage you to work in teams of three people (no more than three).
+We highly encourage you to work in teams of four people (no more than our).
 
 ### Prizes
 
@@ -298,4 +307,4 @@ Winners in the mid-project checkpoint contest will receive points as follows:
     </br>
     Have fun!</br>
     Please bring our attention to any problems you discover.
-</p>
+</p> -->
